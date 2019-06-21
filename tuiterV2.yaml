@@ -15,15 +15,9 @@ paths:
     get:
       tags:
         - Tuit
-      summary: Obtener tuits con busqueda filtrada
-      description: Obtiene los tuits que contiene la palabra del parametro.
+      summary: Obtener tuits.
+      description: Obtiene todos los tuits.
       operationId: getTuits
-      parameters:
-        - name: palabraTuit
-          in: query
-          required: true
-          schema:
-            type: string
       responses:
         '200':
            $ref: '#/components/responses/200Tuit'
@@ -120,15 +114,9 @@ paths:
     get:
       tags:
         - Eventos
-      summary: Obtener eventos con busqueda filtrada
-      description: Obtiene los eventos que contiene la palabra del parametro.
+      summary: Obtener eventos 
+      description: Obtiene todos los eventos.
       operationId: getEventos
-      parameters:
-        - name: nombreEvento
-          in: query
-          required: true
-          schema:
-            type: string
       responses:
         '200':
            $ref: '#/components/responses/200Evento'
