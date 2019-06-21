@@ -155,9 +155,9 @@ components:
         nombreEvento:
           type: string
           example: 'Partido de futbol en Pinilla'
-        topic:
+        usuario:
           type: string
-          example: 'partidosFutbol'
+          example: '@nombreUsuario'
         descripcion:
           type: string
           example: 'Partido de futbol 7 en los campos de Pinilla a las 17:00, se pueden hacer varios equipos y hacer un triangular'
