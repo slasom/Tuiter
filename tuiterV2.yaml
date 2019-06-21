@@ -30,7 +30,7 @@ paths:
         - Tuit
       summary: Enviar tuit
       description: Publica un tuit.
-      operationId: sendTuit
+      operationId: postTuit
       requestBody:
         required: true
         content:
@@ -97,7 +97,7 @@ paths:
         - Eventos
       summary: Publicar evento
       description: Envia un evento en el topic seleccionado.
-      operationId: sendEvent
+      operationId: postEvento
       requestBody:
         required: true
         content:
