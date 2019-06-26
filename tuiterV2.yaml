@@ -126,7 +126,7 @@ paths:
           $ref: '#/components/responses/405'
     delete:
       tags:
-        - Evento
+        - Eventos
       summary: Eliminar evento
       description: Elimina un evento dando como parametro el id y autor del evento.
       operationId: deleteEvento
