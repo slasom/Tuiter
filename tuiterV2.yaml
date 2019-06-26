@@ -52,14 +52,14 @@ paths:
       operationId: deleteTuit
       parameters:
         - name: idTuit
-          in: path
+          in: query
           description: id del tuit para borrar
           required: true
           schema:
             type: integer
             format: int64
         - name: nombreUsuario
-          in: path
+          in: query
           required: true
           schema:
             type: string
@@ -122,6 +122,32 @@ paths:
            $ref: '#/components/responses/200Evento'
         '404':
            $ref: '#/components/responses/404'
+        '405':
+          $ref: '#/components/responses/405'
+    delete:
+      tags:
+        - Evento
+      summary: Eliminar evento
+      description: Elimina un evento dando como parametro el id y autor del evento.
+      operationId: deleteEvento
+      parameters:
+        - name: idEvento
+          in: query
+          description: id del tuit para borrar
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: nombreUsuario
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '201':
+          $ref: '#/components/responses/201'
+        '404':
+          $ref: '#/components/responses/404'
         '405':
           $ref: '#/components/responses/405'
         
